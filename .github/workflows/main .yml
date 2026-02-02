@@ -55,6 +55,15 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v4
 
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Run test
         uses: ./gradlew test
 
@@ -63,7 +72,3 @@ jobs:
         with:
           name: unit_test_report
           path: app/build/reports/tests/testDebugUnitTest/
-
-
-
-
