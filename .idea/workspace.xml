@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="898b6fed-1803-4ff6-9700-4e186cd1cdac" name="Changes" comment="- add unit test in main.yaml">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main .yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main .yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="898b6fed-1803-4ff6-9700-4e186cd1cdac" name="Changes" comment="- add instrument test in main.yaml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770038323672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- add instrument test in main.yaml">
+      <option name="closed" value="true" />
+      <created>1770039301164</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770039301164</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- This is my first commit of E-CommerceApp" />
     <MESSAGE value="- merge git master" />
     <MESSAGE value="- add unit test in main.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add unit test in main.yaml" />
+    <MESSAGE value="- add instrument test in main.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add instrument test in main.yaml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
