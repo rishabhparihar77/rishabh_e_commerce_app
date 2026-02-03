@@ -50,28 +50,29 @@ android {
 
 }
 
-sonarqube {
-    properties {
-        property ("sonar.projectKey", "rishabhparihar77")
-        property ("sonar.organization", "rishabhparihar77") // Optional for SonarCloud
-        property ("sonar.host.url", "https://sonarcloud.io")  // URL of your SonarQube server
-        property ("sonar.projectName", "rishabhparihar77")
-        property ("sonar.projectVersion", "1.0")
-        property ("sonar.sources", "src/main/java,src/main/kotlin")
-        property ("sonar.tests", "src/test/java,src/androidTest/java")
-        property ("sonar.java.binaries", "${layout.buildDirectory}/classes")
-        property ("sonar.exclusions",
-        "**/R.class," +
-                "**/R$*.class," +
-                "**/BuildConfig.*," +
-                "**/Manifest*.*," +
-                "**/*Test*.*," +
-                "**/android/**/*")
-        property ("sonar.kotlin.detekt.reportPaths",
-        "build/reports/detekt/detekt.xml")
-
-    }
-}
+//sonarqube {
+//    properties {
+//        property ("sonar.projectKey", "rishabhparihar77")
+//        property ("sonar.organization", "rishabhparihar77") // Optional for SonarCloud
+//        property ("sonar.host.url", "https://sonarcloud.io")  // URL of your SonarQube server
+//        property ("sonar.projectName", "rishabh_e_commerce_app")
+//            property ("sonar.token", "2996ab54d274cc8d18f428fa81e493583b80250e")
+//        property ("sonar.projectVersion", "1.0")
+//        property ("sonar.sources", "src/main/java,src/main/kotlin")
+//        property ("sonar.tests", "src/test/java,src/androidTest/java")
+//        property ("sonar.java.binaries", "${layout.buildDirectory}/classes")
+//        property ("sonar.exclusions",
+//        "**/R.class," +
+//                "**/R$*.class," +
+//                "**/BuildConfig.*," +
+//                "**/Manifest*.*," +
+//                "**/*Test*.*," +
+//                "**/android/**/*")
+//        property ("sonar.kotlin.detekt.reportPaths",
+//        "build/reports/detekt/detekt.xml")
+//
+//    }
+//}
 
 dependencies {
 
