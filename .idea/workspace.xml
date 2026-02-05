@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="898b6fed-1803-4ff6-9700-4e186cd1cdac" name="Changes" comment="- change-3 Sonar cube code in main.yaml">
+    <list default="true" id="898b6fed-1803-4ff6-9700-4e186cd1cdac" name="Changes" comment="- change-4 Sonar cube code in main.yaml">
       <change beforePath="$PROJECT_DIR$/.github/workflows/main .yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main .yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770276354025</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- change-4 Sonar cube code in main.yaml">
+      <option name="closed" value="true" />
+      <created>1770277633731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1770277633731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -311,7 +318,8 @@
     <MESSAGE value="- change Sonar cube code in main.yaml" />
     <MESSAGE value="- change-2 Sonar cube code in main.yaml" />
     <MESSAGE value="- change-3 Sonar cube code in main.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="- change-3 Sonar cube code in main.yaml" />
+    <MESSAGE value="- change-4 Sonar cube code in main.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="- change-4 Sonar cube code in main.yaml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

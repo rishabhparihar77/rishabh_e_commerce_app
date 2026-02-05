@@ -74,6 +74,31 @@ android {
 //    }
 //}
 
+
+
+sonar {
+    properties {
+        property ("sonar.projectKey", "rishabhparihar77_rishabh_e_commerce_app")
+        property ("sonar.organization", "rishabhparihar77")
+        property ("sonar.host.url", "https://sonarcloud.io")
+
+        property ("sonar.sources", listOf("app/src/main/java","app/src/main/kotlin"))
+
+        property ("sonar.tests", listOf("app/src/test/java"))
+
+        property ("sonar.exclusions", listOf(
+            "**/R.class",
+            "**/BuildConfig.*",
+            "**/Manifest*.*",
+            "**/*Test*.*",
+            "**/androidTest/**"
+        )
+        )
+    }
+}
+
+
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)

@@ -128,23 +128,38 @@ jobs:
         run: chmod +x gradlew
 
       - name: Cache Gradle dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.gradle/caches
+                ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
               ${{ runner.os }}-gradle-
+            
+            
 
-      - name: Build the project
-        run: ./gradlew build --warning-mode all
+       # Build (required before sonar)
+      - name: Build project
+        run: ./gradlew assembleDebug
 
-      - name: Run SonarQube Scan
-        run: ./gradlew sonarqube --stacktrace
+         # SonarCloud scan
+      - name: SonarCloud Scan
+        run: ./gradlew sonarqube --info
         env:
-          SONAR_HOST_URL: https://sonarcloud.io
-          SONAR_LOGIN: "2996ab54d274cc8d18f428fa81e493583b80250e"
-          SONAR_PROJECT_KEY: "rishabhparihar77_rishabh_e_commerce_app"
-          SONAR_ORGANIZATION: "rishabhparihar77"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # REQUIRED
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+
+#      - name: Build the project
+#        run: ./gradlew build --warning-mode all
+#
+#      - name: Run SonarQube Scan
+#        run: ./gradlew sonarqube --stacktrace
+#        env:
+#          SONAR_HOST_URL: https://sonarcloud.io
+#          SONAR_LOGIN: "2996ab54d274cc8d18f428fa81e493583b80250e"
+#          SONAR_PROJECT_KEY: "rishabhparihar77_rishabh_e_commerce_app"
+#          SONAR_ORGANIZATION: "rishabhparihar77"
 #
 #      - name: SonarCloud Scan
 #        run: ./gradlew app:sonarqube -Dsonar.login=${{secrets.SONAR_TOKEN}}
