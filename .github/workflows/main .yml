@@ -112,6 +112,7 @@ jobs:
 
 
   sonar:
+    needs: [instrumentation-test]
     name: SonarCube Scan
     runs-on: ubuntu-latest
 
@@ -140,14 +141,14 @@ jobs:
 
        # Build (required before sonar)
       - name: Build project
-        run: ./gradlew assembleDebug
+        run: ./gradlew clean assembleDebug kspDebugKotlin
 
          # SonarCloud scan
       - name: SonarCloud Scan
-        run: ./gradlew sonarqube --info
+        run: ./gradlew clean assembleDebug kspDebugKotlin sonar -Dsonar.login=${{secrets.SONAR_TOKEN}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # REQUIRED
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
 
 
 #      - name: Build the project
