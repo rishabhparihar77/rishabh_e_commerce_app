@@ -15,3 +15,4 @@
 local.properties
 /.idea/
 /.kotlin/errors/errors-1770038036727.log
+/.gradle/
